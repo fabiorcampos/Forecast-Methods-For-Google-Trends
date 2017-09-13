@@ -2,7 +2,8 @@
 
 This shiny application is for testing some simple forecasting models. We used the Google Trends database for this application using the "gtrendsR" package.
 
-Instructions:
+## Instructions
+
 To use this application, enter a keyword that interests you, select the forecast template and click on "Run Code".
 
 ## Results
