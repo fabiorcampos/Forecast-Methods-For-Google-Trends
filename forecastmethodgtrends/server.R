@@ -17,7 +17,7 @@ function(input, output) {
                    "Arithmetic Mean" = meanf,
                    "Naive" = naive,
                    "Seasonal Random Walk Method" = snaive,
-                   "Random Walk with Drift Method" = rwf,
+                   "Random Walk Method" = rwf,
                    ignoreNULL = FALSE)
             
       })
@@ -27,9 +27,8 @@ function(input, output) {
             gt.fc <- gt.us$interest_over_time
             xt <- window(gt.fc[,2], end = 200)
             p1 <- modelInput()(xt, h = 60)
-            plot(p1)
+            plot(p1, ylab = "Hits", xlab = "Time series (2004 - 2017)", col = "red", ylim = c(-30, 100))
             lines(gt.fc[,2])
-            
       })
       
       output$summary <- renderPrint({
