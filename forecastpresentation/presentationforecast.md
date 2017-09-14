@@ -3,6 +3,11 @@ Forecast Simple Models
 author: Fábio Campos
 date: September, 2017
 autosize: true
+<style>
+.small-code pre code {
+  font-size: 1em;
+}
+</style>
 
 The Forecast Models for Google Trends Search
 ========================================================
@@ -11,6 +16,10 @@ The Forecast Models for Google Trends Search
 
 This shiny application is for testing some simple forecasting models. We used the Google Trends database for this application using the "gtrendsR" package.
 Instructions
+
+[Shiny Application](https://fabiorcampos.shinyapps.io/forecast_methods_for_google_trends_analysis/)
+
+[Github](https://github.com/fabiorcampos/Forecast-Methods-For-Google-Trends)
 
 ## Instructions
 
@@ -65,5 +74,4 @@ Training set 3.26665e-15 21.8885 18.67186 -22.46488 46.36081    1
 The Screen Application
 ========================================================
 
-<img src="/presentationforecast-figure/print1.png" alt="">
-
+![](presentationforecast-figure/print1.png)

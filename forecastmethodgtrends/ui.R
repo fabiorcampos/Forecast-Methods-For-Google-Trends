@@ -17,12 +17,13 @@ pageWithSidebar(
             p(strong("Get Started"), align = "center"),
             p("1) Select a term to search in Google Trends", align = "center"),
             p("2) Select the Forecast Method", align = "center"),
-            p("3) Click on 'Run Code'!", align = "center")
+            p("3) Click on 'Run Code'! and wait few seconds to load the data", align = "center")
       ),
       mainPanel(
             tabsetPanel(type = "tabs",
                         tabPanel("Plots", plotOutput("plot1"),
-                                 div()),
+                                 h4("See the Manual at: https://github.com/fabiorcampos/Forecast-Methods-For-Google-Trends")
+                                 ),
                         tabPanel("Summary", verbatimTextOutput("summary"),
                                  br(),
                                  p("The measures calculated are:"),
